@@ -160,7 +160,6 @@ export default function Component() {
             mode="single"
             selected={selectedDate}
             onSelect={setSelectedDate}
-            initialFocus
           />
           <DialogFooter>
             <Button onClick={() => setIsCalendarOpen(false)} variant="outline">Cancel</Button>
