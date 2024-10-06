@@ -1,8 +1,8 @@
 "use client";
 
-import useCart from "@/app/hooks/useCart";
-import { useUser } from "@/app/hooks/useUser";
-import { navbarHiddenUrl } from "@/app/utils/data";
+import useCart from "@/hooks/useCart";
+import { useUser } from "@/hooks/useUser";
+import { navbarHiddenUrl } from "@/utils/data";
 import {
   Avatar,
   Button,

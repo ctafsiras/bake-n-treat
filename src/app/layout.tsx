@@ -3,10 +3,10 @@ import Navbar from "@/components/Navbar/Navbar";
 import NewsLetter from "@/components/NewsLetter/NewsLetter";
 import type { Metadata } from "next";
 import { Abhaya_Libre } from "next/font/google";
-import ToasterContext from "./context/ToasterContext";
-import { UserProvider } from "./contexts/UserProvider";
+import ToasterContext from "@/context/ToasterContext";
+import { UserProvider } from "@/contexts/UserProvider";
 import "./globals.css";
-import { Providers } from "./providers";
+import { Providers } from "@/components/providers";
 
 const abhayaLibre = Abhaya_Libre({
   subsets: ["latin"],

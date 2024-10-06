@@ -1,10 +1,10 @@
 "use client";
 
 import LoginForm from "@/components/Authentication/LoginForm";
-import SignupForm from "@/components/Authentication/RegisterForm";
+import SignUpForm from "@/components/Authentication/RegisterForm";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useUser } from "../hooks/useUser";
+import { useUser } from "../../hooks/useUser";
 
 export default function Auth() {
   const [authMethod, setAuthMethod] = useState("login");
@@ -22,7 +22,7 @@ export default function Auth() {
       {authMethod === "login" ? (
         <LoginForm changeMethod={() => setAuthMethod("register")} />
       ) : (
-        <SignupForm changeMethod={() => setAuthMethod("login")} />
+        <SignUpForm changeMethod={() => setAuthMethod("login")} />
       )}
     </main>
   );
