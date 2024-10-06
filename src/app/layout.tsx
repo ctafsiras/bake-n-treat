@@ -1,20 +1,44 @@
-import "@/styles/globals.css";
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import NewsLetter from "@/components/NewsLetter/NewsLetter";
+import type { Metadata } from "next";
+import { Abhaya_Libre } from "next/font/google";
+import ToasterContext from "./context/ToasterContext";
+import { UserProvider } from "./contexts/UserProvider";
+import "./globals.css";
+import { Providers } from "./providers";
 
-import { GeistSans } from "geist/font/sans";
-import { type Metadata } from "next";
+const abhayaLibre = Abhaya_Libre({
+	subsets: ["latin"],
+	weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
-  title: "Tuition Tracker",
-  description: "Track all ",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+	title: "Wholly Desserts",
+	description: "Wholly Desserts Official Web Application",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
-    </html>
-  );
+	children,
+}: {
+	children: React.ReactNode;
+}) {
+	return (
+		<html
+			lang="en"
+			className={abhayaLibre.className}
+		>
+			<body>
+				<Providers>
+					<UserProvider>
+						<Navbar />
+						<ToasterContext />
+						{children}
+						<NewsLetter />
+						<Footer />
+					</UserProvider>
+				</Providers>
+			</body>
+		</html>
+	);
 }
