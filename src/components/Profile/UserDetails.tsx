@@ -10,11 +10,35 @@ const UserDetails = () => {
   if (isPending) return <div>Loading...</div>;
 
   return (
-    <main>
-      <Avatar src={user.image} className="w-20 h-20 text-large" />
+    <main className="flex flex-col items-center justify-center p-8 bg-white rounded-lg shadow-md">
+      <Avatar
+        src={user.image}
+        className="w-32 h-32 text-large mb-6"
+        alt={`${user.name}'s profile picture`}
+      />
 
-      <h1>Name: {user.name}</h1>
-      <h1>Email: {user.email}</h1>
+      <div className="text-center">
+        <h2 className="text-2xl font-bold mb-2">{user.name}</h2>
+        <p className="text-gray-600 mb-4">{user.email}</p>
+      </div>
+
+      <div className="w-full max-w-md">
+        <div className="bg-gray-100 p-4 rounded-md mb-4">
+          <h3 className="font-semibold mb-2">Account Details</h3>
+          <p>
+            <span className="font-medium">Member since:</span>{" "}
+            {new Date(user.createdAt).toLocaleDateString()}
+          </p>
+          <p>
+            <span className="font-medium">Last Profile Update:</span>{" "}
+            {new Date(user.updatedAt).toLocaleDateString()}
+          </p>
+        </div>
+
+        <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">
+          Edit Profile
+        </button>
+      </div>
     </main>
   );
 };

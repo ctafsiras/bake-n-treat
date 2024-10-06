@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <section className="w-64 h-dvh sticky top-0 px-10 py-5 bg-orange-400 text-white">
+    <section className="w-72 h-dvh sticky top-0 px-10 py-5 bg-orange-400 text-white">
       <Image src={Logo} alt="Logo" width={50} height={50} />
       <ul className="mt-10 text-xl font-sans uppercase list-inside list-disc">
         <li>
@@ -17,18 +17,18 @@ const Sidebar = () => {
         </li>
         <li>
           <Link
-            href="/dashboard/additem"
+            href="/dashboard/add-product"
             className="bg-gradient-to-r from-white to-white bg-[length:0%_2px] hover:bg-[length:100%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 ease-in-out"
           >
-            Add Item
+            Add Product
           </Link>
         </li>
         <li>
           <Link
-            href="/dashboard/items"
+            href="/dashboard/all-products"
             className="bg-gradient-to-r from-white to-white bg-[length:0%_2px] hover:bg-[length:100%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 ease-in-out"
           >
-            All Items
+            All Products
           </Link>
         </li>
         <li>

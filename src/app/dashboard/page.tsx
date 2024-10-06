@@ -8,7 +8,11 @@ import { useUser } from "../../hooks/useUser";
 export default function Dashboard() {
   const { data: user, isPending } = useUser();
   const router = useRouter();
-  console.log(user);
+  if (isPending) {
+    <div className="flex items-center justify-center h-screen">
+      <Spinner color="primary" labelColor="foreground" />
+    </div>;
+  }
   if (!isPending && !user) {
     return router.push("/");
   }

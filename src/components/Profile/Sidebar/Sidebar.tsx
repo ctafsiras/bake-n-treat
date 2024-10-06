@@ -12,11 +12,11 @@ const Sidebar = () => {
     },
     {
       name: "Address Book",
-      href: "/profile/addressbook",
+      href: "/profile/address-book",
     },
     {
       name: "Ordered Items",
-      href: "/profile/ordereditems",
+      href: "/profile/ordered-items",
     },
   ];
 
