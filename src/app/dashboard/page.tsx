@@ -12,13 +12,6 @@ export default function Dashboard() {
   if (!isPending && !user) {
     return router.push("/");
   }
-  // if (isPending) {
-  //   return (
-  //     <div className="flex items-center justify-center h-screen">
-  //       <Spinner color="primary" labelColor="foreground" />
-  //     </div>
-  //   );
-  // }
 
   return (
     <section>
