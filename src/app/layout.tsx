@@ -9,36 +9,33 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 const abhayaLibre = Abhaya_Libre({
-	subsets: ["latin"],
-	weight: ["400", "700"],
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
-	title: "Wholly Desserts",
-	description: "Wholly Desserts Official Web Application",
+  title: "Bake N Treat",
+  description: "Bake N Treat Official Web Application",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<html
-			lang="en"
-			className={abhayaLibre.className}
-		>
-			<body>
-				<Providers>
-					<UserProvider>
-						<Navbar />
-						<ToasterContext />
-						{children}
-						<NewsLetter />
-						<Footer />
-					</UserProvider>
-				</Providers>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en" className={abhayaLibre.className}>
+      <body>
+        <Providers>
+          <UserProvider>
+            <Navbar />
+            <ToasterContext />
+            {children}
+            <NewsLetter />
+            <Footer />
+          </UserProvider>
+        </Providers>
+      </body>
+    </html>
+  );
 }
