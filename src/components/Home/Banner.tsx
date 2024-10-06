@@ -1,4 +1,3 @@
-import { Slider } from "@nextui-org/react";
 import Image from "next/image";
 import { FaPhone } from "react-icons/fa";
 

@@ -9,9 +9,16 @@ export default function Dashboard() {
   const { data: user, isPending } = useUser();
   const router = useRouter();
   console.log(user);
-  if (!isPending && user) {
+  if (!isPending && !user) {
     return router.push("/");
   }
+  // if (isPending) {
+  //   return (
+  //     <div className="flex items-center justify-center h-screen">
+  //       <Spinner color="primary" labelColor="foreground" />
+  //     </div>
+  //   );
+  // }
 
   return (
     <section>
