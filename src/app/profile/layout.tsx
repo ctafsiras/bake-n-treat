@@ -2,18 +2,18 @@ import Sidebar from "@/components/Profile/Sidebar/Sidebar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Profile - Wholly Desserts",
+  title: "Profile - Bake N Treat",
 };
 
 export default function ProfileLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<main className="flex items-start w-full">
-			<Sidebar />
-			<section className="w-full py-5">{children}</section>
-		</main>
-	);
+  return (
+    <main className="flex items-start w-full">
+      <Sidebar />
+      <section className="w-full py-5">{children}</section>
+    </main>
+  );
 }

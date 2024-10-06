@@ -13,7 +13,7 @@ const AboutUs = () => {
 			</div>
 			<div className="xl:space-y-5 md:space-y-7 space-y-5 text-center md:text-left md:w-1/2">
 				<p className="text-[#FF6F00] font-medium font-sans uppercase tracking-[.2em]">
-					About Wholly Desserts
+					About Bake N Treat
 				</p>
 				<h1 className="text-4xl md:text-5xl">
 					So Sweet, So Good, Sure to Bring Smiles

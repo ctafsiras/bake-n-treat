@@ -2,7 +2,7 @@ import CartItemsContainer from "@/components/Cart/CartItemsContainer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Cart - Wholly Desserts",
+	title: "Cart - Bake N Treat",
 };
 
 export default function Cart() {

@@ -2,19 +2,19 @@ import Sidebar from "@/components/Dashboard/Sidebar/Sidebar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Dashboard - Wholly Desserts",
+  title: "Dashboard - Bake N Treat",
 };
 
 export default function DashboardLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<main className="flex overflow-clip">
-			<Sidebar />
+  return (
+    <main className="flex overflow-clip">
+      <Sidebar />
 
-			<section className="w-full">{children}</section>
-		</main>
-	);
+      <section className="w-full">{children}</section>
+    </main>
+  );
 }

@@ -2,8 +2,8 @@ import UserDetails from "@/components/Profile/UserDetails";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Profile - Wholly Desserts",
-	description: "Wholly Desserts Official Web Application",
+	title: "Profile - Bake N Treat",
+	description: "Bake N Treat Official Web Application",
 };
 
 export default function Profile() {
