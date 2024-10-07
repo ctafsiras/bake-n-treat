@@ -58,7 +58,9 @@ const Navbar = () => {
             href={"/"}
           >
             <Image src={Logo} alt="logo" width={50} height={50} className="" />
-            <span className="font-bold text-3xl">Bake N Treat</span>
+            <span className="font-bold text-3xl text-[#FF6F00]">
+              Bake N Treat
+            </span>
           </Link>
         </NavbarBrand>
       </NavbarContent>

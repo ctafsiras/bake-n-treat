@@ -14,15 +14,20 @@ const Footer = () => {
     >
       <section className="grid gap-y-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between items-start">
         <div className="flex flex-col space-y-3 text-center sm:text-left relative">
-          <div className="mx-auto sm:mx-0">
+          <div className="mx-auto sm:mx-0 flex items-center space-x-2">
             <Image
-              src="/assets/images/logo-footer.png"
-              alt=""
-              width={200}
-              height={50}
+              className="rounded-full bg-[#FF6F00] p-2"
+              src="/assets/logo/bake-n-treat.png"
+              alt="Bakery Logo"
+              width={80}
+              height={80}
             />
+            <h1 className="text-3xl font-bold text-[#FF6F00]">Bake N Treat</h1>
           </div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <p>
+            Crafting artisanal breads and pastries with passion since 1985.
+            Taste the difference in every bite.
+          </p>
           <div className="space-x-4 text-[#FF6F00]">
             <a href="https://www.facebook.com" className="hover:text-white">
               FB
@@ -40,9 +45,9 @@ const Footer = () => {
         </div>
         <nav className="space-y-2">
           <h1 className="text-3xl">Get In Touch</h1>
-          <h5 className="text-sm font-light">457 Morningview Lane, NY</h5>
-          <h5 className="text-sm font-light">example@mail.com</h5>
-          <h5 className="text-sm font-light">+1 (234) 567 890</h5>
+          <h5 className="text-sm font-light">Mirpur 11, Dhaka Bangladesh</h5>
+          <h5 className="text-sm font-light">ctafsiras@gmail.com</h5>
+          <h5 className="text-sm font-light">+8801983510532</h5>
           <h5 className="text-sm font-light">Mon - Fri: 09.00 - 16.00</h5>
         </nav>
         <nav className="space-y-2">

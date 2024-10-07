@@ -25,8 +25,10 @@ const NewsLetter = () => {
           Subscribe to Our Newsletter
         </h1>
         <p className="lg:px-16 mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+          Stay up-to-date with our latest bakery creations, seasonal specials,
+          and exclusive offers. Our newsletter brings the aroma of freshly baked
+          goods right to your inbox, along with helpful tips and delightful
+          recipes to try at home.
         </p>
         <div className="flex flex-col md:flex-row gap-y-5 mt-20">
           <input
