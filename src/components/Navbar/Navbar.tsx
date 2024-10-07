@@ -57,7 +57,13 @@ const Navbar = () => {
             className="flex items-center gap-2 active:scale-105 lg:active:scale-100 lg:hover:-translate-y-2 transition duration-500"
             href={"/"}
           >
-            <Image src={Logo} alt="logo" width={50} height={50} className="" />
+            <Image
+              src={Logo}
+              alt="logo"
+              width={50}
+              height={50}
+              className="rounded-full bg-[#FF6F00] p-2"
+            />
             <span className="font-bold text-3xl text-[#FF6F00]">
               Bake N Treat
             </span>

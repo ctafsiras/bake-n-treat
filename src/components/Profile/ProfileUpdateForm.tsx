@@ -61,6 +61,13 @@ const ProfileUpdateForm = () => {
       }
     });
   };
+  if (isLoading) {
+    return (
+      <div className="h-screen flex justify-center items-center ">
+        <Spinner size="lg" />
+      </div>
+    );
+  }
   if (!user.id) {
     return (
       <div className="h-screen flex justify-center items-center ">

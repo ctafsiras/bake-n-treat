@@ -2,6 +2,7 @@
 
 import { useUser } from "@/hooks/useUser";
 import { Avatar } from "@nextui-org/react";
+import ProfileUpdateForm from "./ProfileUpdateForm";
 
 const UserDetails = () => {
   const { data: user, error, isPending } = useUser();
@@ -39,6 +40,7 @@ const UserDetails = () => {
           Edit Profile
         </button>
       </div>
+      <ProfileUpdateForm />
     </main>
   );
 };
