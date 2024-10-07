@@ -50,7 +50,7 @@ const Menu = () => {
     },
   ];
   return (
-    <section className="lg:h-screen py-20 lg:px-6">
+    <section className="lg:h-screen py-20 px-4 lg:px-6">
       <div className="text-center">
         <p className="text-[#FF6F00] text-medium font-medium capitalize tracking-[.4em]">
           OUR MENU
