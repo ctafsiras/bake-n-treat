@@ -57,8 +57,8 @@ const Menu = () => {
         </p>
         <h1 className="text-5xl">Feel the Butter, All Time</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-x-12 justify-evenly mt-20">
-        {menuItems.map((item) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-x-12 justify-evenly mt-20 relative">
+        {menuItems.map((item, index) => (
           <div key={item.id} className="border-b border-dashed">
             <div className="flex justify-between items-center">
               <h3 className="text-xl">{item.name}</h3>
@@ -67,6 +67,7 @@ const Menu = () => {
             <p className="text-gray-500 text-sm my-3">{item.desc}</p>
           </div>
         ))}
+        <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-px bg-gray-200"></div>
       </div>
     </section>
   );
