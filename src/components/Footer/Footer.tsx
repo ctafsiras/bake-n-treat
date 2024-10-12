@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col space-y-4 text-center sm:text-left relative px-4">
           <div className="mx-auto sm:mx-0 flex justify-center items-center space-x-2">
             <Image
-              className="rounded-full bg-[#FF6F00] p-2"
+              className="rounded-full border-2 bg-white border-[#FF6F00] p-2"
               src="/assets/logo/bake-n-treat.png"
               alt="Bakery Logo"
               width={80}

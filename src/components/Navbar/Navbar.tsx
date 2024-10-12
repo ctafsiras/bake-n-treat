@@ -25,7 +25,12 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Logo from "../../../public/assets/logo/bake-n-treat.png";
 import "./Navbar.css";
+import { Londrina_Sketch as Font } from "next/font/google";
 
+const font = Font({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -62,11 +67,9 @@ const Navbar = () => {
               alt="logo"
               width={50}
               height={50}
-              className="rounded-full bg-[#FF6F00] p-2"
+              className="rounded-full border-2 bg-white border-[#FF6F00] p-2"
             />
-            <span className="font-bold text-3xl text-[#FF6F00]">
-              Bake N Treat
-            </span>
+            <span className={font.className}>Bake N Treat</span>
           </Link>
         </NavbarBrand>
       </NavbarContent>
