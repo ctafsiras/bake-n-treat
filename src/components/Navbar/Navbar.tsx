@@ -25,7 +25,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Logo from "../../../public/assets/logo/bake-n-treat.png";
 import "./Navbar.css";
-import { Londrina_Sketch as Font } from "next/font/google";
+import { Pacifico as Font } from "next/font/google";
 
 const font = Font({
   subsets: ["latin"],
