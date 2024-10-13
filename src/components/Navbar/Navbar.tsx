@@ -69,7 +69,11 @@ const Navbar = () => {
               height={50}
               className="rounded-full border-2 bg-white border-[#FF6F00] p-2"
             />
-            <span className={font.className}>Bake N Treat</span>
+            <span
+              className={`${font.className} text-2xl font-bold text-[#FF6F00]`}
+            >
+              Bake N Treat
+            </span>
           </Link>
         </NavbarBrand>
       </NavbarContent>
